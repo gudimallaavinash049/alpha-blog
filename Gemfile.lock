@@ -79,6 +79,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    debase (0.2.3)
+      debase-ruby_core_source (>= 0.10.2)
+    debase-ruby_core_source (0.10.5)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.11.1)
@@ -153,6 +156,8 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     regexp_parser (1.6.0)
+    ruby-debug-ide (0.7.0)
+      rake (>= 0.8.1)
     ruby_dep (1.5.0)
     rubyzip (1.2.3)
     sass (3.7.4)
@@ -215,6 +220,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  debase (~> 0.2.3)
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
@@ -222,6 +228,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.3)
   rails_12factor
+  ruby-debug-ide (~> 0.7.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
