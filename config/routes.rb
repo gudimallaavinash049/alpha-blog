@@ -3,5 +3,13 @@ Rails.application.routes.draw do
   get 'articles/home', to: 'articles#home'
 
 get 'articles/about', to: 'articles#about'
+
+get 'login', to: 'sessions#new'
+
+post 'login', to: 'sessions#create'
+
+delete 'logout', to: 'sessions#destroy'
   resources:articles
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 end
