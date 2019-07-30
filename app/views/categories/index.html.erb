@@ -1,6 +1,7 @@
 <h1 align="center">Listing All Categories</h1>
 
 <div align="center">
+
 <%= will_paginate %>
 
 <% @categories.each do |category| %>
@@ -17,6 +18,8 @@
 
 </li>
 
+<li><small><%= pluralize(category.articles.count, "article") %></small></li>
+
 </div>
 
 </div>
@@ -24,6 +27,7 @@
 </ul>
 
 <% end %>
+
 <%= will_paginate %>
 
 </div>
